@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
@@ -21,41 +20,40 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-gray-400">
-              The easiest way to book padel courts and find players near you.
+              La forma más fácil de encontrar partidos de pádel y jugadores en Lima.
             </p>
           </div>
 
-          {/* Links */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-3">Explore</h3>
+            <h3 className="text-sm font-semibold text-white mb-3">Explorar</h3>
             <ul className="space-y-2">
-              <li><Link href="/clubs" className="text-sm hover:text-primary transition-colors">Find Clubs</Link></li>
-              <li><Link href="/matches" className="text-sm hover:text-primary transition-colors">Open Matches</Link></li>
-              <li><Link href="/profile" className="text-sm hover:text-primary transition-colors">My Bookings</Link></li>
+              <li><Link href="/matches" className="text-sm hover:text-primary transition-colors">Partidos Abiertos</Link></li>
+              <li><Link href="/community" className="text-sm hover:text-primary transition-colors">Comunidad</Link></li>
+              <li><Link href="/venues" className="text-sm hover:text-primary transition-colors">Sedes</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-white mb-3">Support</h3>
+            <h3 className="text-sm font-semibold text-white mb-3">Soporte</h3>
             <ul className="space-y-2">
-              <li><span className="text-sm">Help Center</span></li>
-              <li><span className="text-sm">Contact Us</span></li>
-              <li><span className="text-sm">FAQ</span></li>
+              <li><span className="text-sm">Centro de Ayuda</span></li>
+              <li><span className="text-sm">Contáctanos</span></li>
+              <li><span className="text-sm">Preguntas Frecuentes</span></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold text-white mb-3">Legal</h3>
             <ul className="space-y-2">
-              <li><span className="text-sm">Terms of Service</span></li>
-              <li><span className="text-sm">Privacy Policy</span></li>
-              <li><span className="text-sm">Cookie Policy</span></li>
+              <li><span className="text-sm">Términos de Servicio</span></li>
+              <li><span className="text-sm">Política de Privacidad</span></li>
+              <li><span className="text-sm">Política de Cookies</span></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-sm text-gray-500">&copy; 2026 PadelPlay. All rights reserved.</p>
+          <p className="text-sm text-gray-500">&copy; 2026 PadelPlay Lima. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

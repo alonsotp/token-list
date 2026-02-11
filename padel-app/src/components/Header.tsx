@@ -10,7 +10,6 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -25,28 +24,28 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/clubs" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
-              Clubs
-            </Link>
             <Link href="/matches" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
-              Matches
+              Partidos
+            </Link>
+            <Link href="/community" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
+              Comunidad
+            </Link>
+            <Link href="/venues" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
+              Sedes
             </Link>
             <Link href="/profile" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
-              My Bookings
+              Mi Perfil
             </Link>
           </nav>
 
-          {/* Desktop Auth */}
           <div className="hidden md:flex items-center gap-3">
             <Link href="/profile" className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors">
-              <div className="w-8 h-8 rounded-full avatar-placeholder text-xs">CG</div>
-              <span>Carlos G.</span>
+              <div className="w-8 h-8 rounded-full avatar-placeholder text-xs">CM</div>
+              <span>Carlos M.</span>
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
@@ -68,23 +67,25 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-3 space-y-1">
-            <Link href="/clubs" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">
-              Clubs
-            </Link>
             <Link href="/matches" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">
-              Matches
+              Partidos
+            </Link>
+            <Link href="/community" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">
+              Comunidad
+            </Link>
+            <Link href="/venues" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">
+              Sedes
             </Link>
             <Link href="/profile" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-primary">
-              My Bookings
+              Mi Perfil
             </Link>
             <div className="border-t border-gray-100 pt-2 mt-2">
               <Link href="/profile" onClick={() => setMenuOpen(false)} className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700">
-                <div className="w-8 h-8 rounded-full avatar-placeholder text-xs">CG</div>
-                <span>Carlos García</span>
+                <div className="w-8 h-8 rounded-full avatar-placeholder text-xs">CM</div>
+                <span>Carlos Mendoza</span>
               </Link>
             </div>
           </div>
