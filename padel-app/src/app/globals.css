@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #00b894;
+  --primary-dark: #00a381;
+  --primary-light: #55efc4;
+  --secondary: #0984e3;
+  --accent: #fdcb6e;
+  --danger: #d63031;
+  --muted: #636e72;
+  --light-bg: #f8f9fa;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-danger: var(--danger);
+  --color-muted: var(--muted);
+  --color-light-bg: var(--light-bg);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --light-bg: #1a1a1a;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b2bec3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #636e72;
+}
+
+/* Image placeholder gradient backgrounds */
+.club-img-1 { background: linear-gradient(135deg, #00b894, #00cec9); }
+.club-img-2 { background: linear-gradient(135deg, #0984e3, #74b9ff); }
+.club-img-3 { background: linear-gradient(135deg, #fdcb6e, #f39c12); }
+.club-img-4 { background: linear-gradient(135deg, #e17055, #d63031); }
+.club-img-5 { background: linear-gradient(135deg, #a29bfe, #6c5ce7); }
+.club-img-6 { background: linear-gradient(135deg, #fd79a8, #e84393); }
+
+.court-indoor { background: linear-gradient(135deg, #2d3436, #636e72); }
+.court-outdoor { background: linear-gradient(135deg, #00b894, #00cec9); }
+
+/* Level badge colors */
+.level-beginner { background-color: #55efc4; color: #00695c; }
+.level-intermediate { background-color: #74b9ff; color: #01579b; }
+.level-advanced { background-color: #fdcb6e; color: #e65100; }
+.level-pro { background-color: #fd79a8; color: #880e4f; }
+
+/* Avatar placeholder */
+.avatar-placeholder {
+  background: linear-gradient(135deg, #00b894, #0984e3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
